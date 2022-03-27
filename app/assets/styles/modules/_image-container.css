@@ -1,0 +1,29 @@
+/* Image container  */
+.img-container {
+  padding: 0 12px;
+
+  @mixin atSmall {
+    padding: 0 25px;
+  }
+
+  &--1 {
+    max-width: 100%;
+
+    @mixin atSmall {
+      width: 66%;
+      max-height: 408px;
+    }
+  }
+  &--2 {
+    /* to Fix & Find a design directive */
+    display: none;
+
+    @mixin atSmall {
+      width: 33%;
+
+      /* to Fix & Find a design directive */
+      display: block;
+      /*max-height: 408px;*/
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/*  Flex util  */
+.flex {
+  display: flex;
+}
+
+.rowSM {
+  flex-direction: column;
+
+  @mixin atSmall {
+    flex-direction: row;
+  }
+}
+
+.col {
+  flex-direction: column;
+}
+
+.endSM {
+  justify-content: center;
+
+  @mixin atSmall {
+    justify-content: flex-end;
+  }
+}

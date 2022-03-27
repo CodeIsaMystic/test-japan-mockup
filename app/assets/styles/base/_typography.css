@@ -1,0 +1,56 @@
+/*  Typography  */
+/*
+--- TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 32 / 38 / 44 / 50 / 62 / 74 / 86 / 98 / 110
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: ?...
+Small: ?...
+Medium: 42px
+Paragraph default: 32px
+Heading default: 60px
+Large: 120px
+
+
+- Letter spacing
+0
+*/
+
+.text-content {
+  font-size: 2.4rem;
+  line-height: 32px;
+  font-weight: normal;
+  margin-bottom: 56px;
+
+  &--big {
+    font-size: 3.2rem;
+    line-height: 42px;
+    margin-bottom: 24px;
+  }
+}
+
+.typo {
+  &--EB-Garamond {
+    font-family: "EB Garamond", serif;
+  }
+
+  &--Lato {
+    font-family: "Lato", sans-serif;
+  }
+
+  &--regular {
+    font-weight: normal;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+}

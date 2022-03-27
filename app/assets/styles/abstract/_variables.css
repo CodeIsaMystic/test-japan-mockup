@@ -1,0 +1,16 @@
+/**********************
+        colors
+**********************/
+$documentBackground: #fff;
+
+$textColor: #000000;
+
+$mainDarkRed: #b71a1a;
+
+$darkColor: #000000;
+$lightColor: #ffffff;
+
+/**********************
+        border
+**********************/
+$redBorderTop: 11px solid #b71a1a;

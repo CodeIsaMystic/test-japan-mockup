@@ -1,0 +1,20 @@
+/*  Utilities  */
+
+/* centering rule */
+.u-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* border utils */
+.u-border-bottom {
+  &--sm {
+    border-bottom: 2px solid #000;
+  }
+
+  &--lg {
+    border-bottom: 4px solid #000;
+  }
+}

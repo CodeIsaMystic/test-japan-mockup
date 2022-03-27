@@ -1,0 +1,29 @@
+/*  Circle  */
+.circle {
+  margin: 0;
+  background-color: $mainDarkRed;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle--flag {
+  height: 108px;
+  width: 108px;
+
+  @mixin atMedium {
+    height: 128px;
+    width: 128px;
+  }
+}
+
+.circle--big {
+  height: 430px;
+  width: 430px;
+}
+
+.circle--big--init {
+  position: absolute;
+  top: 800px;
+  left: -100px;
+  z-index: -2;
+}

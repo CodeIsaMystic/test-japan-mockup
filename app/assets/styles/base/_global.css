@@ -1,0 +1,97 @@
+/*  Global  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::selection {
+  background-color: $darkColor;
+  color: $lightColor;
+}
+
+html {
+  font-size: 50%;
+
+  /* TO FIX: Does not work on Safari */
+  scroll-behavior: smooth;
+
+  /* Remove the border top for UX and PWA settings */
+  border-top: none;
+
+  @mixin atSmall {
+    border-top: $redBorderTop;
+  }
+
+  @mixin atMedium {
+    font-size: 56.25%;
+  }
+
+  @mixin atXLarge {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  width: 100vw;
+  max-width: 1300px;
+  background-color: $documentBackground;
+  margin: 0 auto;
+  padding: 0 25px;
+  overflow-x: hidden;
+
+  /* Global text setting */
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: $textColor;
+}
+
+/* Reset elements  */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*  Reset all tables  */
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

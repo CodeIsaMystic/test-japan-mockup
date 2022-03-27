@@ -1,0 +1,21 @@
+/*  Headings  */
+.heading-primary {
+  font-family: "Lato", sans-serif;
+  font-size: 5.8rem;
+  font-weight: bold;
+  line-height: 60px;
+
+  @mixin atSmall {
+    font-size: 7.4rem;
+    line-height: 90px;
+  }
+
+  @mixin atLarge {
+    font-size: 9.8rem;
+    line-height: 120px;
+  }
+
+  @mixin atXLarge {
+    font-size: 11rem;
+  }
+}

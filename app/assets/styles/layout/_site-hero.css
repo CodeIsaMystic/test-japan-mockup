@@ -1,0 +1,53 @@
+/*  Site Hero  */
+.site-hero {
+  width: 100%;
+  margin-top: 200px;
+
+  &__text {
+    width: 100%;
+    margin: 0;
+    order: 2;
+
+    /* idea to animate but not necessary */
+    z-index: 2;
+    display: block;
+    background-color: white;
+
+    @mixin atSmall {
+      width: 66%;
+      order: 1;
+      margin: 0 25px;
+    }
+
+    &--title {
+      width: 100%;
+    }
+
+    &--logo {
+      margin-bottom: 32px;
+      /* idea to animate but not necessary */
+      margin-top: 20px;
+
+      @mixin atSmall {
+        margin-top: 0;
+      }
+
+      & svg:last-child {
+        margin-left: 6px;
+      }
+    }
+  }
+
+  &__flag {
+    position: relative;
+    width: 100%;
+    order: 1;
+    margin-top: 32px;
+
+    @mixin atSmall {
+      width: 33%;
+      order: 2;
+      margin: 0 25px;
+    }
+  }
+}
