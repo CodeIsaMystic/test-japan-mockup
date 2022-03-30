@@ -46,6 +46,10 @@
   }
 
   &__flag {
+    /*
+    TODO: need to check it out
+    once again from the mockup
+    */
     position: relative;
     width: 100%;
     order: 1;

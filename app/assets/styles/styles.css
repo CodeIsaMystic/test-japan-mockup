@@ -14,6 +14,7 @@
 @import "layout/_site-infos";
 /*  MODULES  */
 @import "modules/_wrapper-content";
+@import "modules/_scrollbar";
 @import "modules/_headings";
 @import "modules/_circles";
 @import "modules/_image-container";
