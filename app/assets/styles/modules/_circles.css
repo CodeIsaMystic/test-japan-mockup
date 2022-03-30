@@ -17,13 +17,33 @@
 }
 
 .circle--big {
-  height: 430px;
-  width: 430px;
+  height: 350px;
+  width: 350px;
+
+  @mixin atMedium {
+    height: 400px;
+    width: 400px;
+  }
+
+  @mixin atXLarge {
+    height: 430px;
+    width: 430px;
+  }
 }
 
 .circle--big--init {
   position: absolute;
-  top: 800px;
-  left: -100px;
+  top: 950px;
+  left: -120px;
   z-index: -2;
+
+  @mixin atMedium {
+    top: 600px;
+    left: -310px;
+  }
+
+  @mixin atXLarge {
+    top: 795px;
+    left: -165px;
+  }
 }
