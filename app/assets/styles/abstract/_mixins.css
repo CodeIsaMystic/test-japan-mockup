@@ -1,29 +1,43 @@
+/* Media queries ruler  
+
+A quick media ruler for the purpose of that test
+ which is NOT complete (no height implementation)
+
+ => no real landscape, or desktop large screen detailed implementation
+=> it need to add some various devices custom mixins 
+*/
+
+/* Mobile, landscape Iphone 8 Plus, SE and larger screens: 414px to 666px */
 @define-mixin atXSmall {
-  @media (min-width: 650px) {
+  @media (min-width: 414px) {
     @mixin-content;
   }
 }
 
+/* Mobile Iphone 6/8, Tablet portrait: 667px to 767px */
 @define-mixin atSmall {
+  @media (min-width: 667px) {
+    @mixin-content;
+  }
+}
+
+/* Tablet portrait: 768px to 1023px */
+@define-mixin atMedium {
   @media (min-width: 768px) {
     @mixin-content;
   }
 }
 
-@define-mixin atMedium {
-  @media (min-width: 950px) {
-    @mixin-content;
-  }
-}
-
+/* Tablet landscape: 1024px to 1299px */
 @define-mixin atLarge {
-  @media (min-width: 1060px) {
+  @media (min-width: 1024px) {
     @mixin-content;
   }
 }
 
+/* Laptop displays and larger screens: 1300px and more */
 @define-mixin atXLarge {
-  @media (min-width: 1280px) {
+  @media (min-width: 1300px) {
     @mixin-content;
   }
 }

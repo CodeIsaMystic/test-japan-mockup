@@ -1,16 +1,16 @@
-/**********************
-        colors
-**********************/
-$documentBackground: #fff;
+/* It could be great to refactor !! */
 
+/*  Colors  */
+$documentBackground: #fff;
 $textColor: #000000;
 
+$darkColor: #000000;
+$darkLightenColor: #424242;
+$grayColor: #818181;
+$lightColor: #ffffff;
 $mainDarkRed: #b71a1a;
 
-$darkColor: #000000;
-$lightColor: #ffffff;
-
-/**********************
-        border
-**********************/
+/*  Borders  */
 $redBorderTop: 11px solid #b71a1a;
+$blackBorderBottom: 2px solid #000;
+$blackBorderBottomLG: 4px solid #000;
