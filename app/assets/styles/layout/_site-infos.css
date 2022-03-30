@@ -1,40 +1,101 @@
 /*  Site infos  */
 .site-infos {
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @mixin atLarge {
+    flex-direction: row;
+  }
+
+  &--col1 {
+    /* to target the Arrow svg element
+    BUT it definitively need to be 
+    implemented separately 
+    */
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+
+    @mixin atLarge {
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      order: 1;
+      width: 41.667%;
+      max-width: 500px;
+      margin-bottom: 222px;
+    }
+  }
+
+  &--col2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+
+    @mixin atLarge {
+      width: 58.333%;
+      max-width: 750px;
+      order: 2;
+    }
+  }
 
   &__content {
-    width: 100%;
-    margin: 0 25px;
-
-    @mixin atSmall {
-      width: 66%;
-      max-width: 750px;
-    }
-
     &__table {
       width: 100%;
-      font-family: "Lato", sans-serif;
       text-align: left;
       margin-bottom: 96px;
 
-      & tr > th {
-        font-size: 3.2rem;
-        font-weight: bold;
-        line-height: 4.2rem;
+      & th {
+        /* 
+        mockup width set to 250 pixels
+        have not resolved the way to target 
+        the <th> element
+        */
+        width: 252px;
         padding-bottom: 16px;
       }
 
-      & tr > td {
-        font-size: 2.4rem;
+      & tbody tr > td {
         padding-top: 26px;
         padding-bottom: 20px;
       }
     }
 
     &__text {
+      @mixin atSmall {
+        text-align: left;
+      }
+
+      & p:first-of-type {
+        margin-bottom: 24px;
+      }
+
+      & p:nth-child(2) {
+        margin-bottom: 56px;
+      }
+
+      & p:nth-child(3) {
+        margin-bottom: 112px;
+      }
     }
 
     &__footer {
+      width: 100%;
+
+      & ul {
+        height: 110px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
   }
 }

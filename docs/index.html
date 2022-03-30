@@ -50,16 +50,16 @@
 
     <!-- page title tag -->
     <title>Compo Japan</title>
-  <link href="styles.ea61bb2506e9cbf5ba67.css" rel="stylesheet"></head>
+  <link href="styles.3813c31147d4f0b2a1f0.css" rel="stylesheet"></head>
 
-  <body>
+  <body id="top">
     <!-- no header for now (comment to remove) -->
     <header></header>
 
     <!-- main section -->
-    <main>
+    <main class="wrapper-content">
       <!-- section site hero -->
-      <section class="site-hero flex rowSM">
+      <section class="site-hero">
         <div class="site-hero__text">
           <div class="site-hero__text--logo" tabindex="-1">
             <svg
@@ -131,19 +131,23 @@
       </section>
 
       <!-- section site gallery -->
-      <section class="site-gallery flex rowSM">
-        <!--  handling responsive images  -->
-        <div class="img-container img-container--1">
+      <section class="site-gallery">
+        <div class="img-container img-container--1 reveal-img1">
           <picture>
             <source
-              sizes="2250px"
-              data-srcset="assets/img/images/image-1@3x.webp 2250w"
-              media="(min-width: 1060px)"
+              sizes="750px"
+              data-srcset="assets/img/images/image-1.webp 750w, assets/img/images/image-1@2x.webp 1500w, assets/img/images/image-1@3x.webp 2250w"
+              media="(min-width: 1300px)"
             />
             <source
-              data-srcset="assets/img/images/image-1@2x.webp 1500w"
-              sizes="1500px"
+              sizes="375px"
+              data-srcset="assets/img/images/image-1.webp 750w"
               media="(min-width: 768px)"
+            />
+            <source
+              sizes="375px"
+              data-srcset="assets/img/images/image-1.webp 750w"
+              media="(min-width: 0px)"
             />
             <img
               class="lazyload"
@@ -153,21 +157,26 @@
           </picture>
         </div>
 
-        <div class="img-container img-container--2">
+        <div class="img-container img-container--2 reveal-img2">
           <picture>
             <source
-              sizes="1200px"
-              data-srcset="assets/img/images/image-2@3x.webp 1200w"
-              media="(min-width: 1060px)"
+              sizes="400px"
+              data-srcset="assets/img/images/image-2.webp 400w, assets/img/images/image-2@2x.webp 800w, assets/img/images/image-2@3x.webp 1200w"
+              media="(min-width: 1300px)"
             />
             <source
-              sizes="800px"
-              data-srcset="assets/img/images/image-2@2x.webp 800w"
+              sizes="200px"
+              data-srcset="assets/img/images/image-2.webp 400w"
               media="(min-width: 768px)"
+            />
+            <source
+              sizes="375px"
+              data-srcset="assets/img/images/image-2@xs.webp 750w"
+              media="(min-width: 0px)"
             />
             <img
               class="lazyload"
-              data-srcset="assets/img/images/image-2.webp 408w"
+              data-srcset="assets/img/images/image-2.webp 400w"
               alt="paper lantern in a streets of Tokyo"
             />
           </picture>
@@ -179,144 +188,173 @@
 
       <!-- section site infos -->
       <section class="site-infos">
-        <div class="site-infos__content flex endSM col">
+        <div class="site-infos--col1">
+          <div class="move-top">
+            <a href="#top">
+              <svg
+                width="110px"
+                height="140px"
+                viewBox="0 0 110 140"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>arrow</title>
+                <g
+                  id="UI"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="compo-japon"
+                    transform="translate(-201.000000, -2642.000000)"
+                    fill="#000000"
+                    fill-rule="nonzero"
+                  >
+                    <path
+                      d="M260,2642 L260.011207,2642.48442 L260.021805,2642.76618 L260.052606,2643.38589 L260.097257,2644.07829 C260.222912,2645.83747 260.450332,2647.80844 260.804951,2649.93615 C261.817787,2656.01317 263.638884,2662.0835 266.452709,2667.71115 C274.311916,2683.42956 288.227073,2692.81112 310.327774,2692.99718 L311,2693 L311,2701 C286.001857,2701 269.385816,2690.33591 259.999335,2672.65147 L260,2782 L252,2782 L252.000983,2672.65087 C242.710808,2690.15432 226.338434,2700.78055 201.766371,2700.99664 L201,2701 L201,2693 C223.491195,2693 237.608699,2683.58833 245.547291,2667.71115 C248.361116,2662.0835 250.182213,2656.01317 251.195049,2649.93615 C251.549668,2647.80844 251.777088,2645.83747 251.902743,2644.07829 L251.947394,2643.38589 L251.978195,2642.76618 L252,2642 L260,2642 Z"
+                      id="arrow"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-          <table class="site-infos__content__table">
-            <tr class="u-border-bottom--lg">
-              <th class="typo--bold" >Fiche informative</th>
-            </tr>
-            <tr class="u-border-bottom--sm">
-              <td class="typo--bold" >Capitale</td>
-              <td>Tokyo</td>
-            </tr>
-            <tr class="u-border-bottom--sm">
-              <td class="typo--bold" >GPS</td>
-              <td>35° 41′ N, 139° 46′ E</td>
-            </tr>
-            <tr class="u-border-bottom--sm">
-              <td class="typo--bold" >Population</td>
-              <td>125 507 472 hab.</td>
-            </tr>
-            <tr class="u-border-bottom--sm">
-              <td class="typo--bold" >Fuseau horaire</td>
-              <td>UTC +9</td>
-            </tr>
-            <tr class="u-border-bottom--sm">
-              <td class="typo--bold" >Superficie</td>
-              <td>377 975 km2</td>
-            </tr>
-            <tr class="u-border-bottom--sm">
-              <td class="typo--bold" >Monnaie</td>
-              <td>Yen</td>
-            </tr>
+        <div class="site-infos--col2 site-infos__content">
+          <table class="site-infos__content__table typo--Lato">
+            <thead
+              class="site-infos__content__table--header u-border-bottom--lg"
+            >
+              <th class="text-content--large typo--bold">Fiche informative</th>
+            </thead>
+            <tbody>
+              <tr class="u-border-bottom--sm">
+                <td class="text-content typo--bold">Capitale</td>
+                <td class="text-content">Tokyo</td>
+              </tr>
+              <tr class="u-border-bottom--sm">
+                <td class="text-content typo--bold">GPS</td>
+                <td class="text-content">35° 41′ N, 139° 46′ E</td>
+              </tr>
+              <tr class="u-border-bottom--sm">
+                <td class="text-content typo--bold">Population</td>
+                <td class="text-content">125 507 472 hab.</td>
+              </tr>
+              <tr class="u-border-bottom--sm">
+                <td class="text-content typo--bold">Fuseau horaire</td>
+                <td class="text-content">UTC +9</td>
+              </tr>
+              <tr class="u-border-bottom--sm">
+                <td class="text-content typo--bold">Superficie</td>
+                <td class="text-content">377 975 km2</td>
+              </tr>
+              <tr class="u-border-bottom--sm">
+                <td class="text-content typo--bold">Monnaie</td>
+                <td class="text-content">Yen</td>
+              </tr>
+            </tbody>
           </table>
-          
-          <div class="site-infos__content__text">
-            <p class="text-content--big typo--EB-Garamond typo--bold">
+
+          <div class="site-infos__content__text typo--EB-Garamond">
+            <p class="text-content--large typo--EB-Garamond typo--bold">
               L'État du Japon forme, dans l'Est de l'Asie, un archipel de 6 852
               îles, sur plus de trois mille kilomètres de long, face à la Russie
               (îles Kouriles), Taïwan, la Corée et la Chine.
             </p>
-            <p class="text-content typo--EB-Garamond">
-              La cuisine japonaise est principalement connue dans le monde entier
-              aux travers des sushis et sashimis. Cette omniprésence mondiale (30
-              000 restaurants dits japonais dans le monde : 14 000 en Amérique du
-              Nord, 10 000 en Asie et 2 500 à travers l'Europe) masque une cuisine
-              complexe qui comprend de nombreuses déclinaisons et spécialités
-              locales. La haute cuisine actuelle japonaise est une cuisine
-              raffinée et codifiée dont les deux incarnations les plus connues
-              sont le repas kaiseki et la collation offerte lors de la cérémonie
-              du thé japonaise (chanoyu) appelée cha-kaiseki. Au quotidien, les
-              Japonais sont ouverts à la diversité de la cuisine mondiale. On peut
-              trouver facilement des restaurants chinois ou coréens, mais aussi
-              italiens, français, ou encore les grandes chaînes de restauration
-              rapide mondiale.
+            <p class="text-content typo--lightenDark">
+              La cuisine japonaise est principalement connue dans le monde
+              entier aux travers des sushis et sashimis. Cette omniprésence
+              mondiale (30 000 restaurants dits japonais dans le monde : 14 000
+              en Amérique du Nord, 10 000 en Asie et 2 500 à travers l'Europe)
+              masque une cuisine complexe qui comprend de nombreuses
+              déclinaisons et spécialités locales. La haute cuisine actuelle
+              japonaise est une cuisine raffinée et codifiée dont les deux
+              incarnations les plus connues sont le repas kaiseki et la
+              collation offerte lors de la cérémonie du thé japonaise (chanoyu)
+              appelée cha-kaiseki. Au quotidien, les Japonais sont ouverts à la
+              diversité de la cuisine mondiale. On peut trouver facilement des
+              restaurants chinois ou coréens, mais aussi italiens, français, ou
+              encore les grandes chaînes de restauration rapide mondiale.
             </p>
-            
-            <p class="text-content typo--EB-Garamond">
+
+            <p class="text-content typo--lightenDark">
               À l'époque de Nara, les temples, dont le Tōdai-ji et le Hōryū-ji
-              comptent parmi les plus connus, fleurissent et la religion imprègne
-              fortement la sculpture et la peinture. Ces influences restent vives
-              jusque vers le XVIe siècle, que ce soit à travers la sculpture
-              réaliste de Kamakura ou la peinture monochromatique de Muromachi,
-              marquée de la pensée zen. Pour autant, l'originalité de l'art
-              japonais se ressent plus pleinement dans des mouvements plus
-              profanes, comme les rouleaux narratifs (emaki) ou l'ukiyo-e, souvent
-              attachés à la vie quotidienne et citadine, ainsi qu'aux
+              comptent parmi les plus connus, fleurissent et la religion
+              imprègne fortement la sculpture et la peinture. Ces influences
+              restent vives jusque vers le XVIe siècle, que ce soit à travers la
+              sculpture réaliste de Kamakura ou la peinture monochromatique de
+              Muromachi, marquée de la pensée zen. Pour autant, l'originalité de
+              l'art japonais se ressent plus pleinement dans des mouvements plus
+              profanes, comme les rouleaux narratifs (emaki) ou l'ukiyo-e,
+              souvent attachés à la vie quotidienne et citadine, ainsi qu'aux
               divertissements. Les Japonais se sont finalement intéressés à des
               arts très variés, s'appropriant calligraphie, étoffes (dont le
               kimono), céramique, laque et le forgeage de sabres. Au xxe siècle,
               le cinéma et les mangas (bandes dessinées japonaises) se répandent
-              et deviennent un fort vecteur d'exportation de la culture japonaise.
+              et deviennent un fort vecteur d'exportation de la culture
+              japonaise.
             </p>
           </div>
-          
-          <!--
-            <div class="site-infos__content__footer">
-              <ul>
+
+          <div class="site-infos__content__footer">
+            <ul class="typo--gray text-content--small">
               <li>
                 Design :
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                >Achille Delobbel</a
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="typo--gray text-content--small"
+                  >Achille Delobbel</a
                 >
               </li>
               <li>
                 Développement :
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                >Antoine Cantoro</a
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="typo--gray text-content--small"
+                  >Antoine Cantoro</a
                 >
               </li>
               <li>
                 Sources :
-                
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                >wikipedia</a
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="typo--gray text-content--small"
+                  >wikipedia</a
                 >
               </li>
             </ul>
           </div>
-        -->
         </div>
-        </section>
-
-        <!--
-        <div class="move-top">
-          <svg
-            width="110px"
-            height="140px"
-            viewBox="0 0 110 140"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <title>arrow</title>
-            <g
-            id="UI"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-            >
-            <g
-            id="compo-japon"
-            transform="translate(-201.000000, -2642.000000)"
-            fill="#000000"
-            fill-rule="nonzero"
-            >
-            <path
-            d="M260,2642 L260.011207,2642.48442 L260.021805,2642.76618 L260.052606,2643.38589 L260.097257,2644.07829 C260.222912,2645.83747 260.450332,2647.80844 260.804951,2649.93615 C261.817787,2656.01317 263.638884,2662.0835 266.452709,2667.71115 C274.311916,2683.42956 288.227073,2692.81112 310.327774,2692.99718 L311,2693 L311,2701 C286.001857,2701 269.385816,2690.33591 259.999335,2672.65147 L260,2782 L252,2782 L252.000983,2672.65087 C242.710808,2690.15432 226.338434,2700.78055 201.766371,2700.99664 L201,2701 L201,2693 C223.491195,2693 237.608699,2683.58833 245.547291,2667.71115 C248.361116,2662.0835 250.182213,2656.01317 251.195049,2649.93615 C251.549668,2647.80844 251.777088,2645.83747 251.902743,2644.07829 L251.947394,2643.38589 L251.978195,2642.76618 L252,2642 L260,2642 Z"
-            id="arrow"
-            ></path>
-          </g>
-        </g>
-      </svg>
-      -->
-    </div>
+      </section>
     </main>
 
     <!-- no footer for now (comment to remove) -->
     <footer></footer>
 
     <script src="bundled.js"></script>
-  <script type="text/javascript" src="main.ea61bb2506e9cbf5ba67.js"></script></body>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
+      integrity="sha512-B8ruywf8mKA4fm0K8SrrNhO5DTokuipFEo7rEnI0RVTt9p29MJKfg8TfOVwMAFZxgI+zOF4iwOA/ByvyJ/sslw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <script type="text/javascript" src="vendors~main.44eada7e69b58b0a88bd.js"></script><script type="text/javascript" src="main.3813c31147d4f0b2a1f0.js"></script></body>
 </html>
