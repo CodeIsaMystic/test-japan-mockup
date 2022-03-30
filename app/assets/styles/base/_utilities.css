@@ -11,10 +11,10 @@
 /* border utils */
 .u-border-bottom {
   &--sm {
-    border-bottom: 2px solid #000;
+    border-bottom: $blackBorderBottom;
   }
 
   &--lg {
-    border-bottom: 4px solid #000;
+    border-bottom: $blackBorderBottomLG;
   }
 }

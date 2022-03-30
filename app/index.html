@@ -135,39 +135,49 @@
         <div class="img-container img-container--1">
           <picture>
             <source
-            sizes="2250px"
-            data-srcset="assets/img/images/image-1@3x.webp 2250w"
-            media="(min-width: 1060px)"
+              sizes="750px"
+              data-srcset="assets/img/images/image-1.webp 750w, assets/img/images/image-1@2x.webp 1500w, assets/img/images/image-1@3x.webp 2250w"
+              media="(min-width: 1300px)"
             />
             <source
-              data-srcset="assets/img/images/image-1@2x.webp 1500w"
-              sizes="1500px"
+              sizes="375px"
+              data-srcset="assets/img/images/image-1.webp 750w"
               media="(min-width: 768px)"
-              />
-              <img
+            />
+            <source
+              sizes="375px"
+              data-srcset="assets/img/images/image-1.webp 750w"
+              media="(min-width: 0px)"
+            />
+            <img
               class="lazyload"
               data-srcset="assets/img/images/image-1.webp 750w"
               alt="street view of Tokyo"
-              />
-            </picture>
-          </div>
+            />
+          </picture>
+        </div>
           
           <div class="img-container img-container--2">
             <picture>
               <source
-              sizes="1200px"
-              data-srcset="assets/img/images/image-2@3x.webp 1200w"
-              media="(min-width: 1060px)"
+                sizes="400px"
+                data-srcset="assets/img/images/image-2.webp 400w, assets/img/images/image-2@2x.webp 800w, assets/img/images/image-2@3x.webp 1200w"
+                media="(min-width: 1300px)"
               />
               <source
-              sizes="800px"
-              data-srcset="assets/img/images/image-2@2x.webp 800w"
-              media="(min-width: 768px)"
+                sizes="200px"
+                data-srcset="assets/img/images/image-2.webp 400w"
+                media="(min-width: 768px)"
+              />
+              <source
+                sizes="375px"
+                data-srcset="assets/img/images/image-2@xs.webp 750w"
+                media="(min-width: 0px)"
               />
               <img
-              class="lazyload"
-              data-srcset="assets/img/images/image-2.webp 408w"
-              alt="paper lantern in a streets of Tokyo"
+                class="lazyload"
+                data-srcset="assets/img/images/image-2.webp 400w"
+                alt="paper lantern in a streets of Tokyo"
               />
             </picture>
           </div>
