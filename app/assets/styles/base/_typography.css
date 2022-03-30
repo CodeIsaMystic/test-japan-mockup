@@ -1,38 +1,45 @@
-/*  Typography  */
-/*
---- TYPOGRAPHY SYSTEM
+/*  Typography  
 
-- Font sizes (px)
+Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 32 / 38 / 44 / 50 / 62 / 74 / 86 / 98 / 110
 
-- Font weights
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
+Font weights
+ Default: 400
+ Medium: 500
+ Semi-bold: 600
+ Bold: 700
 
-- Line heights
-Default: ?...
-Small: ?...
-Medium: 42px
-Paragraph default: 32px
-Heading default: 60px
-Large: 120px
+Line heights
+ Default: ?...
+ Small: ?...
+ Medium: 42px
+ Paragraph default: 32px
+ Heading default: 60px
+ Large: 120px
 
 
-- Letter spacing
-0
+Letter spacing: normal
+Word spacing: normal
 */
 
 .text-content {
-  font-size: 2.4rem;
-  line-height: 32px;
   font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+
+  /* to remove  */
   margin-bottom: 56px;
+
+  &--small {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
 
   &--big {
     font-size: 3.2rem;
-    line-height: 42px;
+    line-height: 4.2rem;
+
+    /* to remove  */
     margin-bottom: 24px;
   }
 }
@@ -47,10 +54,22 @@ Large: 120px
   }
 
   &--regular {
-    font-weight: normal;
+    font-weight: 400;
   }
 
   &--bold {
-    font-weight: bold;
+    font-weight: 700;
+  }
+
+  &--dark {
+    color: $darkColor;
+  }
+
+  &--lightenDark {
+    color: $darkLightenColor;
+  }
+
+  &--gray {
+    color: $grayColor;
   }
 }
