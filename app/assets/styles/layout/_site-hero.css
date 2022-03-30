@@ -1,7 +1,13 @@
 /*  Site Hero  */
 .site-hero {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-top: 200px;
+
+  @mixin atSmall {
+    flex-direction: row;
+  }
 
   &__text {
     width: 100%;
@@ -16,7 +22,7 @@
     @mixin atSmall {
       width: 66%;
       order: 1;
-      margin: 0 25px;
+      text-align: left;
     }
 
     &--title {
@@ -30,6 +36,7 @@
 
       @mixin atSmall {
         margin-top: 0;
+        text-align: left;
       }
 
       & svg:last-child {
@@ -42,12 +49,12 @@
     position: relative;
     width: 100%;
     order: 1;
-    margin-top: 32px;
+    margin: 32px 0 0;
 
     @mixin atSmall {
       width: 33%;
       order: 2;
-      margin: 0 25px;
+      margin: 0;
     }
   }
 }

@@ -1,0 +1,18 @@
+/*  main wrapper content  */
+.wrapper-content {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 12px;
+
+  @mixin atXSmall {
+    padding: 0 25px;
+  }
+
+  @mixin atXLarge {
+    max-width: 1312px;
+    width: 100%;
+    padding: 0 50px;
+  }
+}

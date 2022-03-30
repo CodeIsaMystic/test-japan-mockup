@@ -1,24 +1,7 @@
-/*  Flex util  */
-.flex {
-  display: flex;
-}
+/*  Flex util  
 
-.rowSM {
-  flex-direction: column;
+removed all settings for matter of times
+maybe I will use some mixins instead
 
-  @mixin atSmall {
-    flex-direction: row;
-  }
-}
-
-.col {
-  flex-direction: column;
-}
-
-.endSM {
-  justify-content: center;
-
-  @mixin atSmall {
-    justify-content: flex-end;
-  }
-}
+.flex {}
+*/
