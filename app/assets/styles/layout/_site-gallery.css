@@ -1,6 +1,18 @@
 /*  Site gallery  */
 .site-gallery {
   width: 100%;
-  height: auto;
-  margin: 96px 0 118px;
+  margin: 196px 0 218px;
+
+  @mixin atMedium {
+    display: flex;
+    justify-content: flex-end;
+    margin: 245px 0 218px;
+  }
+  @mixin atLarge {
+    margin: 185px 0 118px;
+  }
+  @mixin atXLarge {
+    margin: 96px 0 118px;
+    justify-content: center;
+  }
 }

@@ -3,16 +3,16 @@
   font-family: "Lato", sans-serif;
   font-size: 5.8rem;
   font-weight: bold;
-  line-height: 60px;
+  line-height: 6rem;
 
   @mixin atSmall {
     font-size: 7.4rem;
-    line-height: 90px;
+    line-height: 9rem;
   }
 
   @mixin atLarge {
     font-size: 9.8rem;
-    line-height: 120px;
+    line-height: 12rem;
   }
 
   @mixin atXLarge {

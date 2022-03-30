@@ -1,29 +1,27 @@
 /* Image container  */
 .img-container {
-  padding: 0 12px;
+  &--1 picture {
+    width: 100%;
+    padding-right: 0;
 
-  @mixin atSmall {
-    padding: 0 25px;
-  }
+    @mixin atMedium {
+      margin-right: 50px;
+    }
 
-  &--1 {
-    max-width: 100%;
+    & img {
+      margin-bottom: 50px;
 
-    @mixin atSmall {
-      width: 66%;
-      max-height: 408px;
+      @mixin atMedium {
+        margin-bottom: 0;
+      }
     }
   }
-  &--2 {
-    /* to Fix & Find a design directive */
-    display: none;
 
-    @mixin atSmall {
-      width: 33%;
+  &--2 picture {
+    width: 100%;
 
-      /* to Fix & Find a design directive */
-      display: block;
-      /*max-height: 408px;*/
-    }
+    /*
+    @mixin atSmall {}
+    */
   }
 }
